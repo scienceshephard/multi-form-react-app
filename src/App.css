@@ -1,0 +1,452 @@
+.container{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: auto;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: fit-content;
+}  h1{
+    color: #0000ffba;
+  }
+  p{
+    color: grey;
+  }
+
+  .btn-container{
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+}
+.go-back-link{
+  display: flex;
+}
+.link{
+  background-color: #0000ffba;
+  margin-left: auto;
+  color: aliceblue;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.link:hover{
+  cursor: pointer;
+  background-color: #0000ffd9;
+}
+.go-back-link{
+  padding: 5px;
+  text-decoration: none;
+}
+.go-back-link:hover{
+  cursor: pointer;
+  color: #0000ffd9;
+}
+
+/* Navbar styling starts here */
+.navbar{
+  background-image: url('/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+  width: 30vw;
+  background-position: center;
+  background-size: cover;
+  height: 568px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+.card{
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.num-row{
+  border: 1px solid aqua;
+  margin-left: 20px;
+  padding: 14px;
+  font-size: 2rem;
+  border-radius: 100%;
+}
+#one{
+  background-color: #00ffffc9;
+}
+.step{
+  color: grey;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.step-content{
+  font-size: 1.5rem;  
+  margin-top: 0;
+  margin-bottom: 0;
+  color: whitesmoke;
+}
+/* Navbar styling ends here */
+
+
+/* Info container styling starts here */
+.info-container{
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+section{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-content{
+  display: contents;
+  gap: 10px;
+  padding: 20px;
+}
+input{
+  width: 98%;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+input:hover{
+  border-color: red;
+  cursor: pointer;
+}
+h1{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Info container styling ends here */
+
+
+/* Plan container styling starts here */
+.plan-container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.form-plan{
+  display: flex;
+  flex-direction: column;
+}
+.card-choy{
+  border-radius: 10px;
+  cursor: pointer;
+  width: 10vw;
+  padding: 16px;
+}
+.card-choice{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  h2{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+  h4{
+    color: #0000ffba;
+  }
+}
+.toggle-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Plan container styling ends here */
+
+
+/* Adds-on container styling starts here */
+.adds-container{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.form-adds{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.option{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #0000ffba;
+
+}
+input[type="checkbox"]{
+  width: fit-content;
+}
+h2{
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #0000ffba;
+}
+.adds-content{
+  display: flex;
+  flex-direction: column;
+
+}
+/* Adds-on container styling end here */
+
+
+/* Summary-container styling starts here */
+.summary-container{
+  display: flex;
+  flex-direction: column;
+}
+.colour{
+  background-color: beige;
+  flex-direction: column;
+  border-radius: 10px;
+  display: flex; 
+}
+.row{
+  display: flex;
+  margin: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+#row-plan{
+  flex-direction: column;
+  gap: 10px;  
+}
+h3{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#ar{  
+  margin-bottom: 10px;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+.row-plan{
+  display: flex;
+  justify-content: space-between;
+}
+h4{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.changePlan{
+  color: blue;
+  text-decoration: underline;
+}
+.changePlan:active{
+  color: blueviolet;
+}
+/* Summary-container styling ends here */
+
+
+/* Thankyou-container styling starts here */
+.thankyou-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+  img{
+    width: fit-content;
+  }
+}
+
+h3{
+  font-size: 32px;
+}
+/* Thankyou-container styling starts here */
+
+@media(max-width:648px){
+  
+  .container{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 0;
+  }
+  .header-mobile{
+    width: 90%;
+    border-top: 3px solid white;
+    padding: 20px;
+    margin-top: -100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: auto;
+    border-bottom: 0;
+    margin-right: auto;
+    background-color: white;
+  }
+  .btn-container{
+    width: 99%;
+    border: 1px beige groove;
+    margin-top: 100px;
+    height: 70px;
+    display: flex;
+    background-color: beige;
+    flex-wrap: wrap-reverse;
+  }
+  .link{
+    height: fit-content;
+    align-self: center;
+    padding: 17px;
+  }
+  .go-back-link{
+    align-self: center;
+  }
+  /* Navbar styles starts here */
+  .navbar {
+    background-image: url('/bg-sidebar-mobile.svg');
+    background-repeat: no-repeat;
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    background-size: cover;
+    height: 172px;
+    border-radius: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .num-row{
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+  }
+  .card{
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+  }
+  .content{
+    display: none;
+  }
+  /* Navbar styles ends here */
+  
+  /* Info style starts here */
+  .info-container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: 76vh;
+    background-color: aliceblue;
+  }
+  section{
+    height: fit-content;
+  }
+  .form-content{
+    width: 81vw;
+    background-color: white;
+    border-top: none;
+    border-bottom: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  /* Info styles ends here */
+
+  /* Plan style starts here */
+  .plan-container{
+    border: 3px solid white;
+    background-color: aliceblue;
+    padding-bottom: 0px;
+  }
+  .form-plan{
+    border-bottom: 3px solid white;
+    width: 90vw;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+  }
+  .card-choice{
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .card-choy{
+    width: 90%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .toggle-container{
+    background-color: beige;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  /* Plan style ends here */
+
+
+  /* Adds style start here */
+
+  .adds-container{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid white;
+    /*padding: 20px;*/
+  }
+  .form-adds{
+    width: 90vw;
+    background-color: white;
+    margin-top: auto;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .option{
+    /*width:70vw;*/
+  }
+  /* Adds style end here */
+
+  .thankyou-container{
+    border: 1px solid;
+    width: 70%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -70px;
+    background-color: white;
+    padding: 100px 20px 100px 20px;
+  }
+}
+
+  @media (max-width:268px){
+  .card{
+    display: none;
+  }
+}
