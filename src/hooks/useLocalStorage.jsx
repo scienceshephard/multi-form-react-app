@@ -1,4 +1,3 @@
-cls
 import {useEffect, useState} from "react";
 
 const useLocalStorage = () => {
