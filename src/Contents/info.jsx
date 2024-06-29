@@ -3,7 +3,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const InfoPage = () => {
 
-    const {Name, telephone, email, setName, setEmail, setTelephone} = useLocalStorage()
+    const {handleNumRowStyle, Name, telephone, email, setName, setEmail, setTelephone} = useLocalStorage()
 
     return (
         <>
@@ -29,9 +29,8 @@ const InfoPage = () => {
                     </div>
 
                     <div className="btn-container">
-                        <Link className="link" to={'/plan'} onClick={() => {
-
-                        }} type="submit">Next Step</Link>
+                        <Link className="link" to={'/plan'} onClick={() => handleNumRowStyle(2)} type="submit">Next
+                            Step</Link>
                     </div>
                 </section>
             </div>

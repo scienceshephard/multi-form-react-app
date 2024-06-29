@@ -12,7 +12,8 @@ const Plan = () => {
         advancedPrice,
         togglebutton,
         handleChecked,
-        handleChoiceClicked
+        handleChoiceClicked,
+        handleNumRowStyle
     } = useLocalStorage();
 
     return (
@@ -24,7 +25,7 @@ const Plan = () => {
             <div className="form-plan">
                 <div className="card-choice">
                     <div className="card-choy" onClick={() => handleChoiceClicked("Arcade")} style={{
-                        border: activeButton == "Arcade" && '2px solid #0000ffba',
+                        border: activeButton == "Arcade" && '3px solid #0000ffba',
                         backgroundColor: activeButton == "Arcade" && 'beige'
                     }}>
                         <img src="/icon-arcade.svg" alt="Arcade Image"/>
@@ -36,7 +37,7 @@ const Plan = () => {
                     </div>
 
                     <div className="card-choy" onClick={() => handleChoiceClicked("Advanced")} style={{
-                        border: activeButton == "Advanced" && '2px solid #0000ffba',
+                        border: activeButton == "Advanced" && '3px solid #0000ffba',
                         backgroundColor: activeButton == "Advanced" && 'beige'
                     }}>
                         <img name="arcade" src="/icon-advanced.svg"
@@ -49,7 +50,7 @@ const Plan = () => {
                     </div>
 
                     <div className="card-choy" onClick={() => handleChoiceClicked("Pro")} style={{
-                        border: activeButton == "Pro" && '2px solid #0000ffba',
+                        border: activeButton == "Pro" && '3px solid #0000ffba',
                         backgroundColor: activeButton == "Pro" && 'beige'
                     }}>
                         <img src="/icon-pro.svg" alt="Pro Image"/>
@@ -69,7 +70,8 @@ const Plan = () => {
             </div>
             <div className="btn-container">
                 <Link to=".." className="go-back-link">Go Back</Link>
-                <Link className="link" to='/plan/adds' type="submit">Next Step</Link>
+                <Link className="link" to='/plan/adds' onClick={() => handleNumRowStyle(3)} type="submit">Next
+                    Step</Link>
             </div>
         </div>
     );

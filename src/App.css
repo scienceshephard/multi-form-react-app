@@ -75,9 +75,6 @@
   font-size: 2rem;
   border-radius: 100%;
 }
-#one{
-  background-color: #00ffffc9;
-}
 .step{
   color: grey;
   margin-top: 0;
@@ -143,6 +140,7 @@ p{
 }
 .card-choy{
   border-radius: 10px;
+  border: 1px #0000ffba ridge;
   cursor: pointer;
   width: 10vw;
   padding: 16px;

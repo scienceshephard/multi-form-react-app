@@ -4,6 +4,7 @@ import useLocalStorage from "../hooks/useLocalStorage.jsx";
 // eslint-disable-next-line react/prop-types
 const AddsComponent = () => {
     const {
+        handleNumRowStyle,
         onlinePrice,
         storagePrice,
         durationVal,
@@ -57,7 +58,8 @@ const AddsComponent = () => {
             </div>
             <div className="btn-container">
                 <Link to=".." relative="path" className="go-back-link">Go Back</Link>
-                <Link className="link" id="link" to="/plan/adds/summary" type="submit">Next Step</Link>
+                <Link className="link" id="link" to="/plan/adds/summary" onClick={() => handleNumRowStyle(4)}
+                      type="submit">Next Step</Link>
             </div>
         </div>
     );

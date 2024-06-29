@@ -14,7 +14,8 @@ const SummaryComponent = () => {
         customizableCheckbox,
         storagePrice,
         onlinePrice,
-        customizablePrice
+        customizablePrice,
+        handleNumRowStyle
     } = useLocalStorage();
 
     return (
@@ -70,6 +71,7 @@ const SummaryComponent = () => {
                     } else if (localStorage.getItem('active') == null) {
                         e.preventDefault()
                     }
+                    handleNumRowStyle(5)
                 }} to='/thankyou' type="submit">Confirm</Link>
             </div>
         </div>

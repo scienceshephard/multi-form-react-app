@@ -1,6 +1,11 @@
 import {useEffect, useState} from "react";
 
 const useLocalStorage = () => {
+    //NavBar Component
+    const [numRow, setnumRow] = useState(JSON.parse(localStorage.getItem('numRow')) || 1)
+    const handleNumRowStyle = (num) => {
+        setnumRow(localStorage.setItem('numRow', num))
+    }
 
     //Info Component
     const [Name, setName] = useState(localStorage.getItem('Name') || '');
@@ -118,6 +123,8 @@ const useLocalStorage = () => {
 
     return {
         total,
+        handleNumRowStyle,
+        numRow,
         durationVal,
         price,
         handleChoiceClicked,
